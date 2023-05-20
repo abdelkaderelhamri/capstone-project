@@ -1,0 +1,35 @@
+<form method = "POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset id="title-field">
+            {{ form.title.label }}            
+            {{ form.title(class = "form-control", placeholder="Title") }}
+        </fieldset>
+        <fieldset id="image">
+            {{ form.image.label }}            
+            {{ form.image(class = "form-control", placeholder="Image") }}
+        </fieldset>
+        <fieldset id="summary-field">
+            {{ form.summary.label }}            
+            {{ form.summary(class = "form-control", placeholder="Summary") }}
+        </fieldset>
+        <fieldset id="ingredients-field">
+            {{ form.ingredients.label }}            
+            {{ form.ingredients(class = "form-control", placeholder="Ingredients") }}
+        </fieldset>
+        <fieldset id="instructions-field">
+            {{ form.instructions.label }}            
+            {{ form.instructions(class = "form-control", placeholder="Instructions") }}
+        </fieldset>
+        <fieldset id="date_created">
+            {{ form.date_created.label }}            
+            {{ form.date_created(class = "form-control", placeholder="Date Created") }}
+        </fieldset>
+        
+        
+
+
+        <!-- Submit Button Area -->
+        {{ form.submit_button(class = "btn btn-primary btn-block mt-2") }}
+    </div>   
+</form>
